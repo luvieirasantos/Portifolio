@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luvieira.com.br/sitemap.xml 
