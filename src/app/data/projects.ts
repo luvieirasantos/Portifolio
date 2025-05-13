@@ -63,7 +63,7 @@ export const techProjects: TechProject[] = [
     description: 'Site portfolio moderno com animações e design responsivo',
     image: 'https://cdn-icons-png.flaticon.com/512/686/686104.png',
     technologies: ['Next.js', 'Framer Motion', 'Tailwind CSS'],
-    github: 'https://github.com',
+    github: 'https://github.com/luvieirasantos/Portifolio',
     demo: 'https://demo.com',
     stats: {
       users: '2k+',
