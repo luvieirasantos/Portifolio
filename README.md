@@ -130,58 +130,6 @@ Portifolio/
 └── package.json
 ```
 
-## 🎯 Personalização
-
-### Informações Pessoais
-
-1. **Atualize o metadata** em `app/layout.tsx`:
-   - Título do site
-   - Descrição
-   - URLs das redes sociais
-   - Imagens Open Graph
-
-2. **Modifique o conteúdo** em `app/page.tsx`:
-   - Seção hero
-   - Projetos
-   - Informações de contato
-
-3. **Substitua assets:**
-   - Imagens na pasta `public`
-   - Currículo (`resume.pdf`)
-   - Ícones de redes sociais
-
-### Estilização
-
-1. **Cores e Tema:**
-   - Personalize cores no `tailwind.config.ts`
-   - Modifique variáveis de tema em `app/globals.css`
-
-2. **Tipografia:**
-   - Atualize fontes no `tailwind.config.ts`
-   - Ajuste tamanhos e pesos de texto
-
-## 🚀 Deploy
-
-### Deploy na Vercel (Recomendado)
-
-1. **Crie um repositório no GitHub**
-
-2. **Conecte com Vercel:**
-   - Acesse [vercel.com](https://vercel.com)
-   - Faça login com GitHub
-   - Clique em "New Project"
-   - Importe seu repositório
-   - Clique em "Deploy"
-
-Seu portfólio estará online em minutos com um domínio gratuito da Vercel!
-
-### Deploy Manual
-
-```bash
-npm run build
-npm start
-```
-
 ## 📞 Contato
 
 - **Email:** henrique3.terceiro@gmail.com
