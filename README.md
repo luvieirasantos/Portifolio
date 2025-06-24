@@ -1,140 +1,199 @@
-# Full Stack Developer Portfolio Template
+# Lu Vieira - Portfólio Full Stack Developer
 
-[Demo](https://www.devportfoliotemplates.com/portfolio-templates/full-stack-developer)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-blue?style=for-the-badge&logo=vercel)](https://luvieira.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Lu%20Vieira-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/luhenrivieira)
+[![GitHub](https://img.shields.io/badge/GitHub-luvieirasantos-black?style=for-the-badge&logo=github)](https://github.com/luvieirasantos)
 
-## Getting Started
+## 👨‍💻 Sobre Mim
 
-You have two options to get started with this template:
+Olá! Sou **Lu Vieira**, um desenvolvedor Full Stack apaixonado por criar soluções completas e escaláveis. Com mais de 3 anos de experiência, tenho trabalhado em projetos que vão desde aplicações mobile até sistemas de analytics em tempo real.
 
-### Option 1: Using Git Sparse Checkout
+### 🚀 Experiência Profissional
 
-If you want to clone only this specific template:
+- **Analista de Dados** na **Frubana** - Análise de dados e insights de negócio
+- **Desenvolvedor Frontend** na **PittaSports** - Desenvolvimento de interfaces responsivas e interativas
 
+### 🛠️ Stack Tecnológica
+
+**Frontend:**
+- React & Next.js
+- TypeScript
+- Framer Motion
+- Tailwind CSS
+
+**Backend:**
+- Node.js
+- Python
+- APIs REST
+- Banco de dados SQL
+
+**DevOps & Cloud:**
+- AWS
+- CI/CD Pipelines
+- Docker
+- Infraestrutura escalável
+
+## 🎯 Projetos em Destaque
+
+### 1. Conexão Solidária - Plataforma de Comunicação Offline
+Aplicativo de troca de mensagens offline via Bluetooth para situações de emergência.
+
+**Tecnologias:** React Native, C#, Java, APIs REST
+
+### 2. Porto - AutoDiagnóstico (Porto Seguro)
+Sistema de diagnóstico automático de veículos para oficinas credenciadas.
+
+**Tecnologias:** React Native, APIs REST, Integração OBD-II
+
+### 3. Mottu - Sistema de Mapeamento e Gestão de Pátio
+Sistema completo para gestão de pátio de motos com localização BLE.
+
+**Tecnologias:** ESP32, BLE, IoT, React Native
+
+### 4. Plataforma de Analytics em Tempo Real
+Processamento de mais de 1M de eventos por minuto com dashboards em tempo real.
+
+**Tecnologias:** Apache Kafka, ClickHouse, Python, Redis
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+
+- Node.js 18+ 
+- npm, yarn ou pnpm
+
+### Instalação
+
+1. **Clone o repositório:**
 ```bash
-git clone --no-checkout https://github.com/devportfoliotemplates/devportfoliotemplates.git
-cd devportfoliotemplates
-git sparse-checkout init --cone
-git sparse-checkout set full-stack-developer-portfolio-template
-git checkout
+git clone https://github.com/luvieirasantos/Portifolio.git
+cd Portifolio
 ```
 
-### Option 2: Direct Download
-
-You can download this template as a ZIP file:
-
-1. Visit [download-directory.github.io](https://download-directory.github.io/)
-2. Paste the URL of this portfolio folder: `https://github.com/devportfoliotemplates/devportfoliotemplates/tree/main/full-stack-developer-portfolio-template`
-3. Download and extract the ZIP file
-
-### Running the Template
-
-Once you have the template:
-
-1. Install dependencies:
-
+2. **Instale as dependências:**
 ```bash
 npm install
-# or
+# ou
 yarn install
-# or
+# ou
 pnpm install
 ```
 
-2. Run the development server:
-
+3. **Execute o servidor de desenvolvimento:**
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio.
+4. **Acesse o projeto:**
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Customization
+## 🎨 Características do Portfólio
 
-### Personal Information
+### ✨ Funcionalidades
 
-1. Update metadata in `app/layout.tsx`:
+- **Design Responsivo** - Otimizado para todos os dispositivos
+- **Animações Suaves** - Usando Framer Motion
+- **Suporte Bilíngue** - Português e Inglês
+- **Modo Escuro** - Interface moderna e elegante
+- **Performance Otimizada** - Next.js 15 com Turbopack
 
-   - Site title
-   - Description
-   - Open Graph metadata
-   - Favicon
+### 🏗️ Arquitetura
 
-2. Modify content in `app/page.tsx`:
+- **Next.js 15** - Framework React com App Router
+- **TypeScript** - Tipagem estática para maior confiabilidade
+- **Tailwind CSS** - Estilização utilitária e responsiva
+- **Framer Motion** - Animações e transições suaves
+- **Context API** - Gerenciamento de estado para idiomas
 
-   - Hero section
-   - About section
-   - Projects
-   - Contact information
+## 📁 Estrutura do Projeto
 
-3. Replace assets:
-   - Replace images in the `public` directory
-   - Update social media icons
-   - Modify logo if needed
+```
+Portifolio/
+├── app/
+│   ├── components/
+│   │   ├── Header.tsx          # Navegação e seletor de idioma
+│   │   ├── HeroSection.tsx     # Seção principal com apresentação
+│   │   ├── ProjectsSection.tsx # Portfólio de projetos
+│   │   └── ContactSection.tsx  # Informações de contato
+│   ├── contexts/
+│   │   └── LanguageContext.tsx # Contexto para internacionalização
+│   ├── globals.css             # Estilos globais
+│   ├── layout.tsx              # Layout principal
+│   └── page.tsx                # Página inicial
+├── public/
+│   ├── resume.pdf              # Currículo
+│   └── images/                 # Assets do projeto
+└── package.json
+```
 
-### Styling
+## 🎯 Personalização
 
-1. Colors and Theme:
+### Informações Pessoais
 
-   - Customize colors in `tailwind.config.js`
-   - Modify theme variables in `app/globals.css`
+1. **Atualize o metadata** em `app/layout.tsx`:
+   - Título do site
+   - Descrição
+   - URLs das redes sociais
+   - Imagens Open Graph
 
-2. Typography:
+2. **Modifique o conteúdo** em `app/page.tsx`:
+   - Seção hero
+   - Projetos
+   - Informações de contato
 
-   - Update font families in `tailwind.config.js`
-   - Modify text sizes and weights
+3. **Substitua assets:**
+   - Imagens na pasta `public`
+   - Currículo (`resume.pdf`)
+   - Ícones de redes sociais
 
-3. Layout:
-   - Adjust spacing and padding in component files
-   - Modify responsive breakpoints in `tailwind.config.js`
+### Estilização
 
-## Troubleshooting
+1. **Cores e Tema:**
+   - Personalize cores no `tailwind.config.ts`
+   - Modifique variáveis de tema em `app/globals.css`
 
-### Common Issues
+2. **Tipografia:**
+   - Atualize fontes no `tailwind.config.ts`
+   - Ajuste tamanhos e pesos de texto
 
-1. **Build Errors**
+## 🚀 Deploy
 
-   - Ensure all dependencies are installed
-   - Clear `.next` folder and node_modules
-   - Run `npm install` again
+### Deploy na Vercel (Recomendado)
 
-2. **Styling Issues**
+1. **Crie um repositório no GitHub**
 
-   - Run `npm run build` to ensure TailwindCSS classes are generated
-   - Check for conflicting styles in `globals.css`
+2. **Conecte com Vercel:**
+   - Acesse [vercel.com](https://vercel.com)
+   - Faça login com GitHub
+   - Clique em "New Project"
+   - Importe seu repositório
+   - Clique em "Deploy"
 
-3. **Image Loading**
-   - Verify images are in the correct format (PNG, JPG, WebP)
-   - Check image paths are correct
-   - Ensure images are in the `public` directory
+Seu portfólio estará online em minutos com um domínio gratuito da Vercel!
 
-## Deployment
+### Deploy Manual
 
-Follow these steps to deploy your portfolio for free using GitHub and Vercel:
+```bash
+npm run build
+npm start
+```
 
-1. Create a new GitHub repository
+## 📞 Contato
 
-2. Push your portfolio to GitHub
+- **Email:** henrique3.terceiro@gmail.com
+- **LinkedIn:** [Lu Vieira](https://www.linkedin.com/in/luhenrivieira)
+- **GitHub:** [luvieirasantos](https://github.com/luvieirasantos)
+- **Portfólio:** [luvieira.vercel.app](https://luvieira.vercel.app)
+- **Localização:** São Paulo, SP
 
-3. Deploy with Vercel:
-   - Go to [Vercel](https://vercel.com)
-   - Sign up or log in with GitHub
-   - Click "New Project"
-   - Import your GitHub repository
-   - Vercel will automatically detect Next.js
-   - Click "Deploy"
+## 📄 Licença
 
-Your portfolio will be live in minutes with a free Vercel domain (e.g., `your-repo.vercel.app`). You can later add a custom domain in your Vercel project settings.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## Support
+---
 
-If you find these templates helpful, please consider:
-
-- Starring the repository ⭐
-- Sharing with other developers
-- [Buying me a coffee](https://www.buymeacoffee.com/andreiancu) ☕
-
-For issues and feature requests, please [create an issue](https://github.com/devportfoliotemplates/devportfoliotemplates/issues).
+⭐ **Se este portfólio te ajudou, considere dar uma estrela no repositório!**
