@@ -108,6 +108,33 @@ const translations = {
 				"99.99% de Precisão dos Dados"
 			],
 			architectureTitle: "Arquitetura de Fluxo de Dados"
+		},
+		finance: {
+			title: "Sistema de Controle Financeiro para Confeitaria",
+			description: "Sistema web para gestão financeira de uma confeitaria. Permite cadastrar produtos, adicionar gastos, exportar resumos, visualizar lucros e despesas. Conexão com banco de dados Supabase.",
+			frontendTitle: "Funcionalidades do Sistema",
+			frontendItems: [
+				"Cadastro e edição de produtos",
+				"Adição e controle de gastos",
+				"Exportação de resumo financeiro (PDF/Excel)",
+				"Visualização de lucros e despesas em tempo real",
+				"Interface web responsiva e intuitiva"
+			],
+			backendTitle: "Tecnologias e Integrações",
+			backendItems: [
+				"Banco de dados Supabase",
+				"API REST para operações CRUD",
+				"Autenticação de usuários",
+				"Exportação de dados segura"
+			],
+			achievementsTitle: "Destaques",
+			achievementsItems: [
+				"Gestão financeira centralizada",
+				"Facilidade para pequenos negócios",
+				"Exportação rápida de relatórios",
+				"Controle de receitas e despesas em tempo real"
+			],
+			architectureTitle: "Arquitetura do Sistema"
 		}
 	},
 	en: {
@@ -214,6 +241,34 @@ const translations = {
 				"99.99% Data Accuracy"
 			],
 			architectureTitle: "Data Flow Architecture"
+		},
+		finance: {
+			title: "Financial Control System for Confectionery",
+			description: "Web system for financial management of a confectionery. Allows product registration, expense tracking, summary export, and real-time profit/loss view. Connected to Supabase database.",
+			frontendTitle: "System Features",
+			frontendItems: [
+				"Product registration and editing",
+				"Expense addition and control",
+				"Financial summary export (PDF/Excel)",
+				"Real-time profit and expense visualization",
+				"Responsive and intuitive web interface",
+				"Online access: <a href=\"https://controle-confeitaria.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline text-blue-400\">controle-confeitaria.vercel.app</a>"
+			],
+			backendTitle: "Technologies & Integrations",
+			backendItems: [
+				"Supabase database",
+				"REST API for CRUD operations",
+				"User authentication",
+				"Secure data export"
+			],
+			achievementsTitle: "Highlights",
+			achievementsItems: [
+				"Centralized financial management",
+				"Ease for small businesses",
+				"Quick report export",
+				"Real-time revenue and expense control"
+			],
+			architectureTitle: "System Architecture"
 		}
 	}
 };
@@ -553,6 +608,91 @@ export default function ProjectsSection() {
 												<line x1="295" y1="120" x2="295" y2="150" />
 												<line x1="105" y1="190" x2="200" y2="220" />
 												<line x1="295" y1="190" x2="200" y2="220" />
+											</g>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</motion.div>
+
+					{/* Financeiro Confeitaria */}
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+					>
+						<div className="p-8">
+							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+								<div className="space-y-6">
+									<div>
+										<h3 className="text-2xl font-bold mb-4">{t.finance.title}</h3>
+										<p className="text-gray-400">{t.finance.description}</p>
+										<a href="https://controle-confeitaria.vercel.app" target="_blank" rel="noopener noreferrer" className="underline text-blue-400 block mt-2">Acesse o sistema: controle-confeitaria.vercel.app</a>
+									</div>
+									<div className="grid grid-cols-2 gap-6">
+										<div>
+											<h4 className="text-sm font-semibold text-blue-400 mb-3">{t.finance.frontendTitle}</h4>
+											<ul className="space-y-2 text-sm text-gray-400">
+												{t.finance.frontendItems.map((item, index) => (
+													<li key={index}>• {item}</li>
+												))}
+											</ul>
+										</div>
+										<div>
+											<h4 className="text-sm font-semibold text-purple-400 mb-3">{t.finance.backendTitle}</h4>
+											<ul className="space-y-2 text-sm text-gray-400">
+												{t.finance.backendItems.map((item, index) => (
+													<li key={index}>• {item}</li>
+												))}
+											</ul>
+										</div>
+									</div>
+									<div className="space-y-3">
+										<h4 className="text-sm font-semibold text-teal-400">{t.finance.achievementsTitle}</h4>
+										<ul className="space-y-2 text-sm text-gray-400">
+											{t.finance.achievementsItems.map((item, index) => (
+												<li key={index}>• {item}</li>
+											))}
+										</ul>
+									</div>
+								</div>
+								<div>
+									<h4 className="text-sm font-semibold text-gray-400 mb-4">{t.finance.architectureTitle}</h4>
+									<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+										<svg className="w-full h-full" viewBox="0 0 400 300">
+											{/* Frontend */}
+											<g>
+												<rect x="20" y="20" width="170" height="40" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+												<text x="105" y="45" textAnchor="middle" className="fill-gray-400 text-[12px]">Frontend (Next.js)</text>
+											</g>
+											{/* API REST */}
+											<g>
+												<rect x="210" y="20" width="170" height="40" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<text x="295" y="45" textAnchor="middle" className="fill-gray-400 text-[12px]">API REST</text>
+											</g>
+											{/* Supabase DB */}
+											<g>
+												<rect x="115" y="80" width="170" height="40" rx="4" className="fill-purple-500/20 stroke-purple-500" strokeWidth="1" />
+												<text x="200" y="105" textAnchor="middle" className="fill-gray-400 text-[12px]">Supabase (DB)</text>
+											</g>
+											{/* Exportação PDF/Excel */}
+											<g>
+												<rect x="20" y="150" width="170" height="40" rx="4" className="fill-blue-500/20 stroke-blue-500" strokeWidth="1" />
+												<text x="105" y="175" textAnchor="middle" className="fill-gray-400 text-[12px]">Exportação PDF/Excel</text>
+											</g>
+											{/* Resumo financeiro em tempo real */}
+											<g>
+												<rect x="210" y="150" width="170" height="40" rx="4" className="fill-teal-500/20 stroke-teal-500" strokeWidth="1" />
+												<text x="295" y="175" textAnchor="middle" className="fill-gray-400 text-[12px]">Resumo financeiro em tempo real</text>
+											</g>
+											{/* Linhas de conexão */}
+											<g className="stroke-gray-600" strokeWidth="1">
+												<line x1="105" y1="60" x2="200" y2="80" />
+												<line x1="295" y1="60" x2="200" y2="80" />
+												<line x1="200" y1="120" x2="105" y2="150" />
+												<line x1="200" y1="120" x2="295" y2="150" />
 											</g>
 										</svg>
 									</div>
